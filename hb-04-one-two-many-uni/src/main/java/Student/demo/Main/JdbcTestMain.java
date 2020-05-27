@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public class JdbcTestMain {
     public static void main(String[] args){
-        String jdbcUrl = "jdbc:mysql://localhost:3306/hb-eager-vs-lazy?useSSL=false";
+        String jdbcUrl = "jdbc:mysql://localhost:3306/hb-04-one-to-many-uni?useSSL=false";
         String user = "hbstudent";
         String pass = "hbstudent";
 
