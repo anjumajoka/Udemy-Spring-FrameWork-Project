@@ -1,3 +1,5 @@
+package anju.src;
+
 public class GuthrieSequanceInteger {
     public static int isGuthrieSequance(int a) {
         if (a==1||a<1){

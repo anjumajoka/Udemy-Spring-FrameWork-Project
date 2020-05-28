@@ -1,3 +1,5 @@
+package anju.src;
+
 public class SumFactor {
     public static int sumFactor(int[] a){
         int sum=0;

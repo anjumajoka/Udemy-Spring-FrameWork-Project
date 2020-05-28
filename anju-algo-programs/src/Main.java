@@ -1,35 +1,47 @@
-import java.util.Arrays;
+package anju;
+
+import anju.src.IdComparator;
+import anju.src.MyComarator;
+
+import java.util.*;
 
 public class Main {
+    public static void main(String args[]) {
 
-    public static void main(String[] args) {
-        String size =new String();
-        Substring2solu.main("anshulloveanju");
-//        Prog1 square = new Prog1();
-//        square.isPerfectSquare(6);
-//        square.isPerfectSquare(36);
-//        square.isPerfectSquare(0);
-//        square.isPerfectSquare(-5);
-//        square.isPerfectSquare(3);
+        ArrayList<Employee> employee = new ArrayList<>();
+        employee.add(new Employee(3, 28, "Anju"));
+        employee.add(new Employee(2,33,"isha"));
+        employee.add(new Employee(5,32,"disha"));
+        employee.add(new Employee(8,30,"gita"));
 
-//        Prog2 primeNum = new Prog2();
-//        primeNum.primeCount(-10,6);
-//        primeNum.primeCount(11,29);
-//        primeNum.primeCount(20,22);
-//        primeNum.primeCount(1,1);
-//        primeNum.primeCount(6,2);
-//       primeNum.primeCount(5,5);
-//       primeNum.primeCount(10,30);
+//        Collections.sort(employee);
 
-//       System.out.println("Number of duplicate is" +countDuplicate2.numOfDuplicate("babita"));
-//      int x[] = {};
-//        int x2[] = {1,1,1,1,1,1,2};
-//      System.out.println("Number of duplicate is" + InertialArray.inertial(x));
-//      System.out.println("Number of duplicate is" + InertialArray.inertial(x2));
-//       System.out.println("The perfect squarer pairs are "); CompComp.emplyoee();
+        Comparator<Employee> idCompartor2 = new Comparator<Employee>() {
+            @Override
+            public int compare(Employee o1, Employee o2) {
+                return o1.getId() - o2.getId();
+            }
+        };
 
-//      int[] solveArray = Solve10.solve10();
-//        System.out.println("the solve10 array is");
-//        System.out.print(solveArray[0] +" "+ solveArray[1] );
-        }
+        Comparator<Employee> idCompartor3 = (o1, o2) -> o1.getId() - o2.getId();
+        Comparator<Employee> idCompartor4 =  Comparator.comparing(Employee::getId).thenComparing(Employee::getName);
+
+
+
+        Collections.sort(employee, idCompartor2);
+        Collections.sort(employee, idCompartor3);
+        Collections.sort(employee, idCompartor4);
+        Collections.sort(employee, new IdComparator());
+//        System.out.println(employee);
+
+//        Collections.sort(employee, new NameComparator());
+//        System.out.println(employee);
+//
+//
+
+        String[] s = {"a", "d", "c", "b"};
+        Arrays.sort(s, new MyComarator());
+//        Arrays.asList(s);
+        System.out.println(Arrays.asList(s));
     }
+}

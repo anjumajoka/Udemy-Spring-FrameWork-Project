@@ -1,3 +1,5 @@
+package anju.src;
+
 public class InertialArray {
     public static int inertial(int[] a) {
         int i;
@@ -24,7 +26,7 @@ public class InertialArray {
                 continue;
             }
             oddNum = a[j];
-//            System.out.println("Comparing oddNum" +oddNum);
+//            System.out.println("anju.src.Comparing oddNum" +oddNum);
             for (k = 0; k<a.length; k++){
                 if(a[k]%2==0 && a[k]!=largestnum){
 //                    oddNumGreaterThenEven = true;

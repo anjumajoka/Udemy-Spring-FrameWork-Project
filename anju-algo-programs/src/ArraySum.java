@@ -1,3 +1,5 @@
+package anju.src;
+
 public class ArraySum {
     public static int sumOfArray(int[] a) {
         int i;

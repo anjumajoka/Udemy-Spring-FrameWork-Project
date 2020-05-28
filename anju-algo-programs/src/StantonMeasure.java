@@ -1,3 +1,5 @@
+package anju.src;
+
 public class StantonMeasure {
     public static int stantonMeasure(int[] a){
         int x=a[0];

@@ -1,3 +1,5 @@
+package anju.src;
+
 import java.util.*;
 
 public class CountingDuplicate {

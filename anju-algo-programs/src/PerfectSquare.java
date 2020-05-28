@@ -1,3 +1,5 @@
+package anju.src;
+
 public class PerfectSquare {
     public static int perfectSquareNum(int sum){
         int x= ((int)Math.sqrt(sum));

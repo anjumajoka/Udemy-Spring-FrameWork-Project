@@ -1,3 +1,5 @@
+package anju.src;
+
 public class FindPrimeNumber {
     public static int primeNumber(int x){
         int i = 1;

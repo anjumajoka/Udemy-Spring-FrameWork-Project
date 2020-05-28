@@ -1,3 +1,5 @@
+package anju.src;
+
 public class PorcupineNumber {
     public static int finePorcupineNumber(int num) {
         int itIsPorcupineNum = 0;

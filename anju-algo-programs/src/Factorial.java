@@ -1,3 +1,5 @@
+package anju.src;
+
 public class Factorial {
 //    public static int factorial(int a){
 //        int output =a;

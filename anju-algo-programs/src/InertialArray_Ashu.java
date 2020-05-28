@@ -1,3 +1,5 @@
+package anju.src;
+
 public class InertialArray_Ashu {
     public static int inertial(int[] a) {
         int i;

@@ -1,3 +1,5 @@
+package anju.src;
+
 public class StringAlphabets {
 
     public static void stringAlphabets(String A, String B){

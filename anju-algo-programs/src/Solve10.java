@@ -1,3 +1,5 @@
+package anju.src;
+
 public class Solve10 {
     public static int[] solve10(){
         int x=0;

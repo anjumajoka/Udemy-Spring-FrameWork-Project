@@ -1,3 +1,5 @@
+package anju.src;
+
 public class GuthrieSequence {
     public static int isGuthrieSequence(int[] a){
         int i;

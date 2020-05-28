@@ -1,3 +1,5 @@
+package anju.src;
+
 public class SmallestArraySorting {
     public static int sorting(int[] x){
         int i;

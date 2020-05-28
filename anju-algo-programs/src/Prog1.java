@@ -1,3 +1,5 @@
+package anju.src;
+
 public class Prog1 {
     public void isPerfectSquare(int x) {
         int y =x;

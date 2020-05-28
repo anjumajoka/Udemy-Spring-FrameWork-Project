@@ -1,3 +1,5 @@
+package anju.src;
+
 public class Madav1 {
     public static int amadhavArray(int[] a) {
         int i;

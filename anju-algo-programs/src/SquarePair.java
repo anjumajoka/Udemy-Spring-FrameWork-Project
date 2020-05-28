@@ -1,3 +1,5 @@
+package anju.src;
+
 public class SquarePair {
     public static int countSquarePairs(int[] a) {
         int i = 0;

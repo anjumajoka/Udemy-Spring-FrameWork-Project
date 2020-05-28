@@ -1,28 +1,48 @@
-public class Employee implements Comparable {
-    String name;
-    int id;
-    Employee(String name, int id){
-        this.name = name;
+package anju;
+
+class Employee implements Comparable<Employee> {
+
+    private int id;
+    private int age;
+    private String name;
+
+    public Employee(int id, int age, String name){
         this.id = id;
+        this.age = age;
+        this.name = name;
     }
 
     @Override
-    public String toString() {
-        return "Employee{" +
-                "name='" + name + '\'' +
-                ", id=" + id +
-                '}';
+    public int compareTo(Employee o) {
+        return name.compareTo(o.name);
     }
 
-    public int compareTo(Object obj){
-        int id1=this.id;
-        Employee e = (Employee)obj;
-        int id2 = e.id;
-        if(id1<id2){
-            return -1;
-        } else if (id1>id2){
-            return +1;
-        } else return 0;
+    public String toString(){
+        return "\n(Id: "+ id +", Age: "+ age +", Name: "+ name +" )";
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
 }
-
