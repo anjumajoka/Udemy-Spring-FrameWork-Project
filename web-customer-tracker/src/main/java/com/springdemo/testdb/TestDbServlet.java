@@ -1,4 +1,4 @@
-package com.luv2code.testdb;
+package com.springdemo.testdb;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,8 +16,8 @@ public class TestDbServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws javax.servlet.ServletException, java.io.IOException
     {
         // set connection variables
-        String user = "springstudent";
-        String pass = "springstudent";
+        String user = "hbstudent";
+        String pass = "hbstudent";
 
         String jdbcUrl = "jdbc:mysql:// localhost:3306/web-customer-tracker";
         String drier = "com.mysql.jdbc.Driver";
